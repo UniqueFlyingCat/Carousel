@@ -1,0 +1,120 @@
+body, html {
+    font-size: 20px;
+}
+* {
+    margin: 0;
+}
+.max {
+    display: none;
+}
+.active {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+.div-button {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    height: 3rem;
+    line-height: 3rem;
+    z-index: 3;
+}
+.button-1, .button-2  {
+    position: relative;
+    /*filter: blur(5px);*/
+    opacity: .3;
+    color: black;
+    background: lightcyan;
+    width: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 260;
+    /*点击效果*/
+    border: none;
+    outline: medium;
+    height: 4rem;
+    cursor: pointer;
+}
+.button-1 {
+    float: left;
+    text-align: left;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.button-2 {
+    float: right;
+    text-align: right;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+/*
+    元素水平居中
+    父元素 text-align: center;
+    子元素 display: inline-block;
+*/
+.div-dot {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    height: 1rem;
+    line-height: 1rem;
+    left: 0%;
+    padding: 0;
+    text-align: center;
+}
+.ul1 {
+    height: 1rem;
+    list-style: none;
+    line-height: 1rem;
+    overflow: hidden;
+    padding: 0;
+    display: inline-block;
+    background: rgba(233, 245, 242, 0.25);
+    border-radius: 0.5rem;
+}
+.dot {
+    position: relative;
+    width: 0.7rem;
+    height: 0.7rem;
+    line-height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: .5;
+    z-index: 3;
+    padding: 0;
+    float:left;
+    margin: 0.15rem 0.25rem 0 0;
+    cursor: pointer;
+}
+.dot0 {
+    margin-left: 0.25rem;
+}
+.highlight {
+    opacity: .9;
+}
+#next:before {
+  border: 10px solid transparent;
+  border-left: 10px solid #635f5f;
+  position: absolute;
+  content: ' ';
+  left: 15px;
+  top: 30px;
+}
+#prev:after {
+  border: 10px solid transparent;
+  border-right: 10px solid #635f5f;
+  position: absolute;
+  content: ' ';
+  right: 15px;
+  top: 30px;
+}
+.carousel {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 50px;
+    top: 50px;
+    box-shadow:0px 0px  10px 5px #aaa;
+}
